@@ -6,6 +6,14 @@ This is not a bill predictor. Actual spend depends on run duration, included min
 
 ## Quick start
 
+Run directly from the public repository with Node.js 20 or newer:
+
+```powershell
+npx --yes --package=github:WNordbergg/actions-cost-guard actions-cost-guard path\to\repo --monthly-runs 250
+```
+
+Or clone it for repeat use and local tests:
+
 ```powershell
 git clone https://github.com/WNordbergg/actions-cost-guard.git
 Set-Location actions-cost-guard
@@ -16,7 +24,7 @@ node src/cli.js .github\workflows\ci.yml --json
 node src/cli.js path\to\repo --fail-on high
 ```
 
-The CLI reads local files only. It needs no GitHub token and does not upload workflow contents. See the generated [sample report](examples/sample-report.md) for the deliberately risky test fixture.
+The one-command path downloads the package source and dependency from GitHub/npm, then the CLI reads the target files locally. It needs no GitHub token and does not upload workflow contents. See the generated [sample report](examples/sample-report.md) for the deliberately risky test fixture.
 
 When given a repository directory, the CLI scans `.github/workflows`. Findings currently cover:
 
