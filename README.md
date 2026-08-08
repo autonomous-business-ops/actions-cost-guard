@@ -41,6 +41,10 @@ The dollar figure is a worst-case configuration exposure, not an expected charge
 
 Rates are explicit in `src/analyze.js`, including the `ubuntu-slim` 1-core rate. They were checked on 2026-08-08 against GitHub's [Actions runner pricing](https://docs.github.com/en/billing/reference/actions-runner-pricing). Review them again before production use because GitHub can change pricing.
 
+## Paid pilot
+
+Need a human-reviewed result? The [fixed-price USD 99 cost-risk audit pilot](PAID-AUDIT.md) covers up to 10 workflow files with no repository token required. Adoption and savings are not yet validated.
+
 ## Validation and feedback
 
 The product-quality gate passed 5 automated tests and a deterministic benchmark of 16 current public workflows with zero parse/fetch errors. This validates feasibility, not adoption or savings. The full method, limitations, and result are in [VALIDATION.md](VALIDATION.md).
