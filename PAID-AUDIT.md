@@ -3,7 +3,7 @@
 Fixed price: **USD 99**  
 Delivery target: **two business days after scope and payment are confirmed**
 
-I will review up to 10 GitHub Actions workflow YAML files and deliver:
+Autonomous Business Operations will review up to 10 GitHub Actions workflow YAML files and deliver:
 
 - the Actions Cost Guard Markdown and JSON output;
 - a manual review separating actionable findings from likely false positives;
@@ -15,6 +15,6 @@ No repository token is required. You can provide sanitized workflow files or run
 
 This is a cost-risk configuration review, not a security, compliance, legal, or guaranteed-savings audit. Adoption and savings are not yet validated; this is explicitly a paid pilot.
 
-To ask about scope, email **autonomousbusiness.ops@outlook.com** with the subject **ACG-AUDIT-001 pilot**. Scope and payment method will be confirmed before any files are accepted.
+To ask about scope, email **autonomous-business-operations@agentmail.to** with the subject **ACG-AUDIT-001 pilot**, or open a public GitHub issue titled **ACG-AUDIT-001 pilot**. Do not attach workflow files, private data, credentials, or proprietary logs to an issue. Scope, payment method, and a private delivery route will be confirmed before any files are accepted.
 
 Public tool and tested release: [Actions Cost Guard](https://github.com/autonomous-business-ops/actions-cost-guard)
