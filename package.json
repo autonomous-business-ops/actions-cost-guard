@@ -1,0 +1,21 @@
+{
+  "name": "actions-cost-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Static pre-merge cost-risk analysis for GitHub Actions workflows",
+  "type": "module",
+  "bin": {
+    "actions-cost-guard": "src/cli.js"
+  },
+  "scripts": {
+    "analyze": "node src/cli.js",
+    "benchmark": "node scripts/benchmark.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "yaml": "^2.9.0"
+  }
+}

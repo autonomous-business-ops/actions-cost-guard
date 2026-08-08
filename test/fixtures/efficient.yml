@@ -1,0 +1,22 @@
+name: Efficient CI
+on:
+  pull_request:
+    paths:
+      - "src/**"
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      matrix:
+        node: [20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results
+          path: results/
+          retention-days: 7
