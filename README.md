@@ -9,13 +9,13 @@ This is not a bill predictor. Actual spend depends on run duration, included min
 Run directly from the public repository with Node.js 20 or newer:
 
 ```powershell
-npx --yes --package=github:WNordbergg/actions-cost-guard actions-cost-guard path\to\repo --monthly-runs 250
+npx --yes --package=github:autonomous-business-ops/actions-cost-guard actions-cost-guard path\to\repo --monthly-runs 250
 ```
 
 Or clone it for repeat use and local tests:
 
 ```powershell
-git clone https://github.com/WNordbergg/actions-cost-guard.git
+git clone https://github.com/autonomous-business-ops/actions-cost-guard.git
 Set-Location actions-cost-guard
 npm install
 npm test
@@ -45,4 +45,4 @@ Rates are explicit in `src/analyze.js`, including the `ubuntu-slim` 1-core rate.
 
 The product-quality gate passed 5 automated tests and a deterministic benchmark of 16 current public workflows with zero parse/fetch errors. This validates feasibility, not adoption or savings. The full method, limitations, and result are in [VALIDATION.md](VALIDATION.md).
 
-If the tool finds something useful—or produces a noisy result—open an [analysis feedback issue](https://github.com/WNordbergg/actions-cost-guard/issues/new?template=analysis-feedback.yml). Do not include private workflow contents, credentials, or proprietary logs.
+If the tool finds something useful—or produces a noisy result—open an [analysis feedback issue](https://github.com/autonomous-business-ops/actions-cost-guard/issues/new?template=analysis-feedback.yml). Do not include private workflow contents, credentials, or proprietary logs.
