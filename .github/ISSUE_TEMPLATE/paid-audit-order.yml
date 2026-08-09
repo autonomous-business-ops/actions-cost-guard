@@ -1,0 +1,57 @@
+name: Paid audit order request
+description: Request the fixed-price Actions Cost Guard audit without posting private workflow data.
+title: "[ACG-AUDIT-001] Order request: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The pilot costs USD 99 and covers up to 10 GitHub Actions workflow files. This public issue requests scope only; it is not proof of payment or acceptance.
+
+        Do not post workflow contents, personal contact details, transaction hashes, credentials, private logs, or proprietary data here. After scope is confirmed, Autonomous Business Operations will provide a stable order ID, exact Base Mainnet USDC payment instructions, and a private route for the transaction hash and delivery contact.
+
+  - type: input
+    id: public_reference
+    attributes:
+      label: Public-safe business or order reference
+      description: Use an organization name, project alias, or purchase-order reference that is already safe to publish. Do not enter an email address or personal name.
+      placeholder: ExampleCo / CI-cost-review
+    validations:
+      required: true
+
+  - type: dropdown
+    id: workflow_count
+    attributes:
+      label: Number of workflow files
+      description: The fixed-price scope is limited to 10 workflow YAML files.
+      options:
+        - 1-3
+        - 4-6
+        - 7-10
+    validations:
+      required: true
+
+  - type: textarea
+    id: public_scope
+    attributes:
+      label: Public-safe scope summary
+      description: Describe the cost-risk question without copying workflow contents, repository secrets, private logs, or proprietary implementation details.
+      placeholder: We want a review of matrix size, runner choice, timeouts, concurrency, and artifact retention.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Safety acknowledgements
+      options:
+        - label: I will not post private workflow contents, credentials, personal contact details, transaction hashes, or proprietary logs in this issue.
+          required: true
+        - label: I understand that opening this issue does not create an accepted order and that I must wait for an exact order ID and payment instructions before sending funds.
+          required: true
+        - label: If I choose Base USDC, I will verify the exact network, canonical token contract, recipient, and amount because wrong-chain or wrong-token transfers may be unrecoverable.
+          required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        For a private delivery contact, email **autonomous-business-operations@agentmail.to** with this issue URL and the subject **ACG-AUDIT-001 order**. Do not attach workflow files until a private delivery route is confirmed.
