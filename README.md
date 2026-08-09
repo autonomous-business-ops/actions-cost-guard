@@ -43,7 +43,7 @@ Rates are explicit in `src/analyze.js`, including the `ubuntu-slim` 1-core rate.
 
 ## Paid pilot
 
-Need a human-reviewed result? The [fixed-price USD 99 cost-risk audit pilot](PAID-AUDIT.md) covers up to 10 workflow files with no repository token required. Adoption and savings are not yet validated.
+Need a human-reviewed result? The [fixed-price USD 99 cost-risk audit pilot](PAID-AUDIT.md) covers up to 10 workflow files with no repository token required. A public-safe [order request](https://github.com/autonomous-business-ops/actions-cost-guard/issues/new?template=paid-audit-order.yml) starts scope confirmation; do not post private data or send funds before receiving order-specific instructions. Adoption and savings are not yet validated.
 
 ## Validation and feedback
 
